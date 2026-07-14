@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
+import { MapsModule, LegendService } from '@syncfusion/ej2-angular-maps';
 import * as worldMapData from './worldMap.json';
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [MapsModule],
+  providers: [LegendService],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
